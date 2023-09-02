@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnytimeFitness</title>
+    <style>
+        /* css reset */
+
+
+        .header{
+            background-color: black;
+            padding:1px;
+            
+            
+        }
+        body{
+            font-family: 'Borel', cursive;
+            font-family: 'Maven Pro', sans-serif;
+            background:url('background.jpg');
+            background-position: 140px 92px;
+            color: antiquewhite;
+            margin-top: 0px;
+            padding: 0px;
+            
+            
+        }
+        .left{
+            position: absolute;
+            left: 20px;
+            top: 5px;
+            display: inline-block;
+            /* border: 2px solid red; */
+            margin: 10px;
+        }
+        .logo{
+            height: 70px;
+            border: 5px solid wheat;
+        }
+        #title{
+            display: inline;
+            position: relative;
+             bottom: 37px;
+            left: 20px;
+        }
+        .center{
+            display:block;
+            width: 600px;
+            margin:20px auto;
+            /* border: 2px solid green; */
+        }
+
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            padding: 0px 35px;
+
+        }
+        .navbar li a{
+            color: antiquewhite;
+            text-decoration: none;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            color: rgb(192, 131, 50);
+            text-decoration: underline;
+        }
+        .right{
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+            margin: 10px;
+        }
+        /* .background{
+             background:url('background.jpg'); 
+        } */
+
+        .btn{
+            padding: 5px 10px;
+            margin: 10px;
+            background-color: black;
+            color: antiquewhite;
+            border: 2px solid antiquewhite;
+             border-radius:7px ;
+             font-family: 'Borel', cursive;
+font-family: 'Maven Pro', sans-serif;
+        }
+
+        .btn:hover{
+            cursor: pointer;
+            background-color: rgb(192, 131, 50);
+        }
+
+        .formbox{
+            width: 300px;
+            border: 2px solid antiquewhite;
+            border-radius: 20px;
+            position: absolute;
+        right: 100px;
+        top: 200px;
+        padding: 40px 65px;
+        
+
+        }
+
+        .formgrp{
+            margin: 5px;
+        }
+
+        #fi{
+            margin: 5px 30px;
+            padding: 5px 10px;
+            width: 200px;
+            border: 2px solid antiquewhite;
+            background-color: black;
+            color:antiquewhite;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #submitbutton{
+            margin:14px 97px;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Maven+Pro&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.jpg" alt="logo" class="logo">
+            <div id="title">AnytimeFitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="center">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">
+                Call Us
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+        
+    </header>
+
+    <div class="formbox">
+        <h2>Join the best gym Now!!!</h2>
+        <form action="noaction.php">
+            <div class="formgrp">
+
+                <div><input type="text" name="" id="fi" placeholder="Enter Your Name"></div>
+                <div><input type="text" name="" id="fi" placeholder="Enter Your Locality"></div>
+                <div><input type="text" name="" id="fi" placeholder="Enter Your Phone No."></div>
+                <div><input type="text" name="" id="fi" placeholder="Enter Your Emailid"></div>
+                <div><input type="text" name="" id="fi" placeholder="Enter Your Questions"></div>
+                <button class="btn" id="submitbutton">
+                    Submit Now
+                </button>
+            </div>
+        </form>
+
+    </div>
+
+</body> 
+</html>
